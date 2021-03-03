@@ -4,7 +4,7 @@
     header{
 
         .logo{
-            background-image: url("../../assets/logo-desktop-01.png");
+            background-image: url("../assets/logo-desktop-01.png");
         }
         #ham-btn-id{
             display: none;
@@ -46,13 +46,13 @@
             width: 40px;
             height: 40px;
             display: inline-block;
-            background-image: url("../../assets/button-crear-gifo.svg");
+            background-image: url("../assets/button-crear-gifo.svg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         .crear-gifo:hover{
-            background-image: url("../../assets/CTA-crear-gifo-hover.svg");
+            background-image: url("../assets/CTA-crear-gifo-hover.svg");
         }
 
 }
@@ -114,7 +114,7 @@
                     height: 20%;
                     width: 100%;
                     .cross-icon-1{
-                        background-image: url("../../assets/close.svg");
+                        background-image: url("../assets/close.svg");
                         background-repeat: no-repeat;
                         background-size: cover;
                         width: 15px;
@@ -134,7 +134,7 @@
                     //     text-align: center;
                     .scroll-container{
                         .previous-icon{
-                            background-image: url("../../assets/button-slider-left.svg");
+                            background-image: url("../assets/button-slider-left.svg");
                             height: 30px;
                             width: 30px;
                             // position: absolute;
@@ -155,7 +155,7 @@
                             max-width: 350px;
                         }
                         .next-icon{
-                            background-image: url("../../assets/Button-Slider-right.svg");
+                            background-image: url("../assets/Button-Slider-right.svg");
                             height: 30px;
                             width: 30px;
                             // position: absolute;
@@ -191,7 +191,7 @@
                         .icons-div-container{
                             display: flex;
                             .like-icon{
-                                background-image: url("../../assets/icon-fav.svg");
+                                background-image: url("../assets/icon-fav.svg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 width: 20px;
@@ -199,7 +199,7 @@
                                 margin-top: 10%;
                             }
                             .download-icon{
-                                background-image: url("../../assets/icon-download.svg");
+                                background-image: url("../assets/icon-download.svg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 width: 20px;
@@ -218,7 +218,7 @@
     //TRENDING
     .trending{
         .scroll-previous{
-            background-image: url("../../assets/button-slider-left.svg");
+            background-image: url("../assets/button-slider-left.svg");
             background-repeat: no-repeat;
             background-size: 100%;
             // position: absolute;
@@ -230,7 +230,7 @@
             cursor: pointer;
         }
         .scroll-next{
-            background-image: url("../../assets/Button-Slider-right.svg");
+            background-image: url("../assets/Button-Slider-right.svg");
             height: 30px;
             width: 30px;
             // position: absolute;
@@ -242,17 +242,17 @@
             cursor: pointer;
         }
         .scroll-previous:hover{
-            background-image: url("../../assets/button-slider-left-hover.svg");
+            background-image: url("../assets/button-slider-left-hover.svg");
         }
         .scroll-next:hover{
-            background-image: url("../../assets/button-slider-right-hover.svg");
+            background-image: url("../assets/button-slider-right-hover.svg");
         }
     }
     .gifo-screen{
         .camera{
         width: 110px;
         height: 100px;
-        background-image: url("../../assets/element-camara.svg");
+        background-image: url("../assets/element-camara.svg");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -262,7 +262,7 @@
         .path{
         width: 60px;
         height: 90px;
-        background-image: url("../../assets/Path\ 2.svg");
+        background-image: url("../assets/Path\ 2.svg");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -295,7 +295,7 @@
 
     .dark-mode{
         .logo{
-            background-image: url("../../assets/Logo-modo-noc.svg");
+            background-image: url("../assets/Logo-modo-noc.svg");
         }
         #menu{
             background-color: #37383C;
@@ -308,18 +308,18 @@
         }
         .trending{
             .scroll-previous{
-                background-image: url("../../assets/button-slider-left-md-noct.svg");
+                background-image: url("../assets/button-slider-left-md-noct.svg");
                 
             }
             .scroll-next{
-                background-image: url("../../assets/button-slider-right-md-noct.svg");
+                background-image: url("../assets/button-slider-right-md-noct.svg");
                 
             }
         }
         .fullscreen-container{
             background-color: #37383C;
              .cross-icon-1{
-                 background-image: url("../../assets/close-modo-noc.svg");
+                 background-image: url("../assets/close-modo-noc.svg");
              }
              .user-info{
                  color: white;
@@ -330,7 +330,7 @@
             
         }
         .cross-icon-1{
-            background-image: url("../../assets/close-modo-noct.svg");
+            background-image: url("../assets/close-modo-noct.svg");
         }
     }
 

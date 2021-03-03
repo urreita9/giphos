@@ -11,7 +11,7 @@ header{
         width: 48.8px;
         height: 48.8px;
         margin-left: 5%;
-        background-image: url("../../assets/logo-mobile.png");
+        background-image: url("../assets/logo-mobile.png");
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -22,13 +22,13 @@ header{
         width: 20px;
         height: 20px;
         border: none;
-        background-image: url("../../assets/burger.svg");
+        background-image: url("../assets/burger.svg");
         background-repeat: no-repeat;
         background-size: 100%;
         transition: 0.2s ease;
     }
     #ham-btn-id.active{
-        background-image: url("../../assets/close.svg");
+        background-image: url("../assets/close.svg");
         
     }
     // #ham-btn-id 
@@ -76,7 +76,7 @@ header{
     }
     
 //     .logo{
-//         background-image: url(../../assets/logo-mobile.svg);
+//         background-image: url(../assets/logo-mobile.svg);
 //         background-repeat: no-repeat;
 //         background-size: 30px 30px;
 //         width: 13%;

@@ -4,7 +4,7 @@
         background-color: #000000;
     }
     .logo{
-        background-image: url("../../assets/logo-mobile-modo-noct.svg");
+        background-image: url("../assets/logo-mobile-modo-noct.svg");
     }
   
     #ham-btn-id{
@@ -14,21 +14,21 @@
         width: 20px;
         height: 20px;
         border: none;
-        background-image: url("../../assets/close-modo-noct.svg");
+        background-image: url("../assets/close-modo-noct.svg");
         background-repeat: no-repeat;
         background-size: 100%;
         transition: 0.2s ease;
     }
     #ham-btn-id.active{
-        background-image: url("../../assets/burger-modo-noct.svg");
+        background-image: url("../assets/burger-modo-noct.svg");
     }
     .crear-gifo{
       
-        background-image: url("../../assets/CTA-crear-gifo-modo-noc.svg");
+        background-image: url("../assets/CTA-crear-gifo-modo-noc.svg");
         
     }
     .crear-gifo:hover{
-        background-image: url("../../assets/CTA-crear-gifo-hover-modo-noc.svg");
+        background-image: url("../assets/CTA-crear-gifo-hover-modo-noc.svg");
     }
     
     #menu{
@@ -41,10 +41,10 @@
     .search_bar{
         border: 1px solid #FFFFFF;
         #lupa{
-            background-image: url("../../assets/icon-search-mod-noc.svg");
+            background-image: url("../assets/icon-search-mod-noc.svg");
         }
         #lupa.lupa-cross{
-            background-image: url("../../assets/close-modo-noct.svg");
+            background-image: url("../assets/close-modo-noct.svg");
         }
         #search-input{
             background-color: #37383C;
@@ -73,32 +73,32 @@
         background-color: #222326;
    
         .scroll-previuos{
-            background-image: url("../../assets/button-slider-left-md-noct.svg");
+            background-image: url("../assets/button-slider-left-md-noct.svg");
             
         }
         .scroll-next{
-            background-image: url("../../assets/button-slider-right-md-noct.svg");
+            background-image: url("../assets/button-slider-right-md-noct.svg");
             
         }
         .scroll-previuos:hover{
-            background-image: url("../../assets/button-slider-left-hover.svg");
+            background-image: url("../assets/button-slider-left-hover.svg");
         }
         .scroll-next:hover{
-            background-image: url("../../assets/button-slider-right-hover.svg");
+            background-image: url("../assets/button-slider-right-hover.svg");
         }
     
 
     }
     .ver-mas-btn{
-        background-image: url("../../assets/CTA-ver+-modo-noc.svg");
+        background-image: url("../assets/CTA-ver+-modo-noc.svg");
     }
     .ver-mas-btn:hover{
-        background-image: url("../../assets/CTA-ver+hover-modo-noc.svg");
+        background-image: url("../assets/CTA-ver+hover-modo-noc.svg");
     }
     .fullscreen-container{
         background-color: #37383C;
         // .cross-icon-1{
-        //     background-image: url("../../assets/close-modo-noct.svg");
+        //     background-image: url("../assets/close-modo-noct.svg");
         // }
         // .user-info{
         //     color: white;

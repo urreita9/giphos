@@ -20,7 +20,7 @@
         margin: 0 auto;
         position: relative;
         .lupa-on-keyup.active {
-            background-image: url("../../assets/lupa-keyup.png");
+            background-image: url("../assets/lupa-keyup.png");
             position: absolute;
             left: 20px;
             color: grey;
@@ -35,7 +35,7 @@
         }
         
         #lupa{
-            background-image: url("../../assets/icon-search.svg");
+            background-image: url("../assets/icon-search.svg");
             background-repeat: no-repeat;
             width: 40px;
             height: 40px;
@@ -46,7 +46,7 @@
             
         }
         #lupa.lupa-cross{
-            background-image: url("../../assets/close.svg");
+            background-image: url("../assets/close.svg");
         }
         .line{
             position: absolute;
@@ -170,7 +170,7 @@
                                 justify-content: flex-end;
                                 align-items: center;
                                 .icon-one-container{
-                                    background-image: url("../../assets/icon-fav.svg");
+                                    background-image: url("../assets/icon-fav.svg");
                                     background-repeat: no-repeat;
                                     background-size: cover;
                                     width: 20px;
@@ -179,20 +179,20 @@
                                     display: inline-block;
                                 }
                                 .icon-one-container.purple-like{
-                                    background-image: url("../../assets/icon-fav-active.svg");
+                                    background-image: url("../assets/icon-fav-active.svg");
                                     background-position: center;
                                     background-size: contain;
                                     background-repeat: no-repeat;
                                 }
                                 
                                 .icon-one-container.on-favs{
-                                    background-image: url("../../assets/icon-trash-normal.svg");
+                                    background-image: url("../assets/icon-trash-normal.svg");
                                 }
                                 .icon-one-container.on-favs:hover{
-                                    background-image: url("../../assets/icon-trash-hover.svg");
+                                    background-image: url("../assets/icon-trash-hover.svg");
                                 }
                                 .icon-two-container{
-                                    background-image: url("../../assets/icon-download.svg");
+                                    background-image: url("../assets/icon-download.svg");
                                     background-repeat: no-repeat;
                                     background-size: cover;
                                     width: 20px;
@@ -200,7 +200,7 @@
                                     margin: 13px 7px 7px 0;
                                 }
                                 .icon-three-container{
-                                    background-image: url("../../assets/icon-max-normal.svg");
+                                    background-image: url("../assets/icon-max-normal.svg");
                                     background-repeat: no-repeat;
                                     background-size: cover;
                                     width: 20px;
@@ -209,19 +209,19 @@
                                 }
                                 
                                 .icon-one-container:hover{
-                                    background-image: url("../../assets/icon-fav-hover.svg");
+                                    background-image: url("../assets/icon-fav-hover.svg");
                                     
                                 }
                                 // .icon-one-container.like-icon-active{
-                                //     background-image: url("../../assets/icon-fav-active.svg");
+                                //     background-image: url("../assets/icon-fav-active.svg");
                                 // }
                                 
                                 .icon-two-container:hover{
-                                    background-image: url("../../assets/icon-download-hover.svg");
+                                    background-image: url("../assets/icon-download-hover.svg");
                                     
                                 }
                                 .icon-three-container:hover{
-                                    background-image: url("../../assets/icon-max-hover.svg");
+                                    background-image: url("../assets/icon-max-hover.svg");
                                     
                                 }
 
@@ -260,7 +260,7 @@
         margin: 45px auto;
         width: 127px;
         height: 50px;
-        background-image: url("../../assets/CTA-ver-mas.svg");
+        background-image: url("../assets/CTA-ver-mas.svg");
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 25px;
@@ -268,7 +268,7 @@
 
     }
     .ver-mas-btn:hover{
-        background-image: url("../../assets/CTA-ver-mas-hover.svg");
+        background-image: url("../assets/CTA-ver-mas-hover.svg");
         
     }
     .nothing-found{
@@ -279,7 +279,7 @@
         
         text-align: center;
         .ouch{
-            background-image: url("../../assets/icon-busqueda-sin-resultado.svg");
+            background-image: url("../assets/icon-busqueda-sin-resultado.svg");
             background-repeat: no-repeat;
             background-size: cover;
             width: 70px;
@@ -287,7 +287,7 @@
             margin: 0 auto;
         }
         .icon-add-favs{
-            background-image: url("../../assets/icon-fav-sin-contenido.svg");
+            background-image: url("../assets/icon-fav-sin-contenido.svg");
             background-repeat: no-repeat;
             background-size: cover;
             width: 70px;
@@ -315,7 +315,7 @@
             height: 20%;
             width: 100%;
             .cross-icon-1{
-                background-image: url("../../assets/close.svg");
+                background-image: url("../assets/close.svg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 15px;
@@ -363,7 +363,7 @@
             .icons-div-container{
                 display: flex;
                 .like-icon{
-                    background-image: url("../../assets/icon-fav.svg");
+                    background-image: url("../assets/icon-fav.svg");
                     background-repeat: no-repeat;
                     width: 30px;
                     height: 30px;
@@ -372,16 +372,16 @@
                     
                 }
                 .like-icon:hover{
-                    background-image: url("../../assets/icon-fav-hover.svg");
+                    background-image: url("../assets/icon-fav-hover.svg");
                 }
                 .like-icon.on-favs{
-                    background-image: url("../../assets/icon-trash-normal.svg");
+                    background-image: url("../assets/icon-trash-normal.svg");
                 }
                 .like-icon.on-favs:hover{
-                    background-image: url("../../assets/icon-trash-hover.svg");
+                    background-image: url("../assets/icon-trash-hover.svg");
                 }
                 .download-icon{
-                    background-image: url("../../assets/icon-download.svg");
+                    background-image: url("../assets/icon-download.svg");
                     background-repeat: no-repeat;
                     width: 30px;
                     height: 30px;

@@ -260,6 +260,10 @@ function drawHover (giphoDivContainer,selectedGif){
 
     }
 
+    giphoDivContainer.addEventListener("click", () => {
+        hoverContainer.classList.toggle("active");
+    })
+
     fullScreenBtn.addEventListener("click", () => {
         fullScreen(selectedGif);
     });

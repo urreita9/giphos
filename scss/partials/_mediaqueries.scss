@@ -80,7 +80,11 @@
                     box-sizing: border-box;
                     margin: 0 auto;
                 }
+                .hover-container:hover{
+                    opacity: 0.8;
+                }
             }
+            
             // .on-favorites{
             //     display: flex;
             //     flex-wrap: wrap;
@@ -212,7 +216,9 @@
         }
             
                 
-            
+        .hover-container:hover{
+            opacity: 0.8;
+        } 
           
   
     //TRENDING

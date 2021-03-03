@@ -1,0 +1,167 @@
+.gifo-screen{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #572EE5;
+    max-width: 580px;
+    #vid{
+        width: 50%;
+        height: 100%;
+        min-width: 180px;
+    }
+    h2{
+        font-family: "Montserrat", sans-serif;
+        color: #572EE5;
+    }
+    h2 span{
+        color: #50E3C2;
+    }
+    p{
+        font-family: "Roboto", sans-serif;
+    }
+    .active{
+        display: none;
+    }
+    .center-screen{
+        position: relative;
+        .waiting-hover{
+            margin: auto;
+            width: 50.1%;
+            background-color: #572EE5;
+            opacity: 0.8;
+            transform: translateX(.1%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+           // text-align: center;
+            left: 0;
+            min-width: 180px;
+            .loading-hover{
+                background-image: url("../../assets/loader.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                animation: rotation 2s infinite linear;
+
+
+                @keyframes rotation {
+                    from {
+                            transform: rotate(0deg);
+                        }
+                    to {
+                            transform: rotate(359deg);
+                        }
+                    }
+                }
+            }
+            .loading-success{
+                background-image: url("../../assets/check.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 20px;
+            }
+            .loadingText-hover{
+                color: white;
+                font-family: "Montserrat", sans-serif;
+            }
+            .link-icon-container{
+                background-image: url("../../assets/icon-link-normal.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                margin: 13px 7px 7px 0;
+                display: inline-block;
+            }
+            .link-icon-container:hover{
+                background-image: url("../../assets/icon-link-hover.svg");
+            }
+        }
+        .header-container-absolute{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            .download-icon-container{
+                background-image: url("../../assets/icon-download.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                margin: 13px 7px 7px 0;
+            }
+            .download-icon-container:hover{
+                background-image: url("../../assets/icon-download-hover.svg");
+            }
+        }
+    
+
+
+}
+.gifo-steps{
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    .steps{
+        display: flex;
+        justify-content: center;
+        .buttons{
+            width: 20px;
+            height: 20px;
+            border: 1px solid #572EE5;
+            color: #572EE5;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 10px;
+            font-weight: bold;
+        }
+        
+    }
+    #step-1.active, #step-2.active, #step-3.active{
+        background-color: #572EE5;
+        color: white;
+    }
+    .purple-line{
+        width: 100%;
+        height: 4px;
+        background-color: #572EE5;
+        border-radius: 10%;
+    }
+    .comenzar-btn{
+        color: #572EE5;
+        border: 1px solid #572EE5;
+        border-radius: 25px;
+        width: 140px;
+        margin: 10px auto;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    .comenzar-btn:hover{
+        background-color: #572EE5;
+        color: white;
+    }
+    .comenzar-btn.active{
+        display: none;
+    }
+    
+}

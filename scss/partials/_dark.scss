@@ -1,0 +1,155 @@
+.dark-mode{
+    background: #37383C;
+    .border{
+        background-color: #000000;
+    }
+    .logo{
+        background-image: url("../../assets/logo-mobile-modo-noct.svg");
+    }
+  
+    #ham-btn-id{
+        margin-right: 5%;
+        position: relative;
+        z-index: 10;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-image: url("../../assets/close-modo-noct.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: 0.2s ease;
+    }
+    #ham-btn-id.active{
+        background-image: url("../../assets/burger-modo-noct.svg");
+    }
+    .crear-gifo{
+      
+        background-image: url("../../assets/CTA-crear-gifo-modo-noc.svg");
+        
+    }
+    .crear-gifo:hover{
+        background-image: url("../../assets/CTA-crear-gifo-hover-modo-noc.svg");
+    }
+    
+    #menu{
+            background-color: #000000;
+            opacity: 1;
+        }
+    h1, h2, .trending_search, .footer_social{
+        color: white;
+    }
+    .search_bar{
+        border: 1px solid #FFFFFF;
+        #lupa{
+            background-image: url("../../assets/icon-search-mod-noc.svg");
+        }
+        #lupa.lupa-cross{
+            background-image: url("../../assets/close-modo-noct.svg");
+        }
+        #search-input{
+            background-color: #37383C;
+            color: white;
+        }
+        .suggestion-container{
+            .suggestion{
+                color: #FFFFFF;
+            }
+            .suggestion:hover{
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+        }
+    }
+    .nothing-found{
+        .try-again{
+            color: #FFFFFF;
+        }
+    }
+    
+    
+   
+    .trending{
+        color: #FFFFFF;
+        background-color: #222326;
+   
+        .scroll-previuos{
+            background-image: url("../../assets/button-slider-left-md-noct.svg");
+            
+        }
+        .scroll-next{
+            background-image: url("../../assets/button-slider-right-md-noct.svg");
+            
+        }
+        .scroll-previuos:hover{
+            background-image: url("../../assets/button-slider-left-hover.svg");
+        }
+        .scroll-next:hover{
+            background-image: url("../../assets/button-slider-right-hover.svg");
+        }
+    
+
+    }
+    .ver-mas-btn{
+        background-image: url("../../assets/CTA-ver+-modo-noc.svg");
+    }
+    .ver-mas-btn:hover{
+        background-image: url("../../assets/CTA-ver+hover-modo-noc.svg");
+    }
+    .fullscreen-container{
+        background-color: #37383C;
+        // .cross-icon-1{
+        //     background-image: url("../../assets/close-modo-noct.svg");
+        // }
+        // .user-info{
+        //     color: white;
+        // }
+        // .title-info{
+        //     color: white;
+        // }
+    }
+    .gifo-screen{
+     
+        border: 1px solid white;
+      
+        h2{
+            
+            color: white;
+        }
+        h2 span{
+            color: #50E3C2;
+        }
+        p{
+            color: white;
+        }
+       
+    }
+   
+    .gifo-steps{
+     
+        .steps{
+           
+            .buttons{
+                
+                border: 1px solid white;
+                color: white;
+                
+            }
+            #step-1.active, #step-2.active, #step-3.active{
+                background-color: white;
+                color: #37383C;
+            }
+        }
+        .purple-line{
+            background-color: white;
+        }
+        .comenzar-btn{
+            color: white;
+            border: 1px solid white;
+        }
+        
+    }
+
+}
+// Cuando pones Modo Nocturno y volves al original, el LOGO no vuelve
+// CAMBIAR menu hamburguesa y boton cruz por nocturno
+// CAMBIAR lupa de search bar por lupa nocturna

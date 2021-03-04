@@ -261,17 +261,7 @@ function drawHover (giphoDivContainer,selectedGif){
     }
 
     
-        let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
-        if (selectedGif.number == 1 || selectedGif.number == 2){
-            for(let i=0; i < favoritos.length; i++){
-                if(favoritos[i].id == selectedGif.id){
-                    
-                    likeBtn.classList.add("purple-like");
-        
-                }
-                
-            }
-        }
+    purpleBtn(likeBtn, selectedGif);
     
     if(window.innerWidth < 720){
         giphoDivContainer.addEventListener("click", () => {
@@ -309,6 +299,23 @@ function drawHover (giphoDivContainer,selectedGif){
 
     
     
+}
+
+function purpleBtn(likeBtn, selectedGif){
+    let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
+        if (favoritos == null){
+            likeBtn.classList.remove("purple-like");
+        }
+        if (selectedGif.number == 1 || selectedGif.number == 2){
+            for(let i=0; i < favoritos.length; i++){
+                if(favoritos[i].id == selectedGif.id){
+                    
+                    likeBtn.classList.add("purple-like");
+        
+                }
+                
+            }
+        }
 }
 function setToFavorites(selectedGif, likeBtn){
     let favoritos = JSON.parse(localStorage.getItem(FAVORITO));

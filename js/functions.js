@@ -305,6 +305,7 @@ function purpleBtn(likeBtn, selectedGif){
     let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
         if (favoritos == null){
             likeBtn.classList.remove("purple-like");
+            return;
         }
         if (selectedGif.number == 1 || selectedGif.number == 2){
             for(let i=0; i < favoritos.length; i++){

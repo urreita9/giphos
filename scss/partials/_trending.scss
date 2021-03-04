@@ -62,6 +62,9 @@
                 bottom: 0;
                 // object-fit: cover;
             }
+            .hover-container.active{
+                opacity: 0.8;
+            }
                 .header-container{
                             height: 15%;
                             width: 100%;
@@ -77,6 +80,15 @@
                                 width: 15px;
                                 height: 15px;
                                 margin-right: 7px;
+                            }
+                            .icon-one-container.purple-like{
+                                background-image: url(../assets/icon-fav-active.svg);
+                                background-position: center;
+                                background-color: #FFFFFF;
+                                background-size: 55%;
+                                background-repeat: no-repeat;
+                                border: 1px solid #572EE5;
+                                border-radius: 25%;
                             }
                             .icon-two-container{
                                 background-image: url("../assets/icon-download.svg");

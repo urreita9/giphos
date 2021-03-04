@@ -237,6 +237,7 @@ function drawHover (giphoDivContainer,selectedGif){
     titleContainer.classList.add("title-container");
 
     addTrashIcon(likeBtn);
+    
 
     giphoDivContainer.appendChild(hoverContainer);
     hoverContainer.appendChild(headerContainer);
@@ -257,12 +258,27 @@ function drawHover (giphoDivContainer,selectedGif){
         titleContainer.innerHTML = "Title undefined";
     } else{
         titleContainer.innerHTML = selectedGif.title;
-
     }
 
-    giphoDivContainer.addEventListener("click", () => {
-        hoverContainer.classList.toggle("active");
-    })
+    
+        let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
+        if (selectedGif.number == 1 || selectedGif.number == 2){
+            for(let i=0; i < favoritos.length; i++){
+                if(favoritos[i].id == selectedGif.id){
+                    
+                    likeBtn.classList.add("purple-like");
+        
+                }
+                
+            }
+        }
+    
+    if(window.innerWidth < 720){
+        giphoDivContainer.addEventListener("click", () => {
+            hoverContainer.classList.toggle("active");
+        })
+    }
+    
 
     fullScreenBtn.addEventListener("click", () => {
         fullScreen(selectedGif);
@@ -590,6 +606,8 @@ function drawTrendingTopics(dataApiObject){
         myTitlesArray.push(myTitles);
     }
     trendingText.innerText = myTitlesArray.join(", ");
+    trendingText.addEventListener("click", console.log(trendingText.textContent));
+    
 }
 function drawTrendsOnLoad(data){
     let giphosContainer = document.getElementById("trending-scroll-image-container");

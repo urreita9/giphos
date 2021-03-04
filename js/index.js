@@ -97,7 +97,16 @@ input.addEventListener("keypress", hitEnter);
 //document.onload = trending(apiTrending);
 document.addEventListener('DOMContentLoaded', trendingTopics().then(data => drawTrendingTopics(data))); 
 
-document.addEventListener('DOMContentLoaded', trending(3,0).then(data => drawTrendsOnLoad(data))); 
+document.addEventListener('DOMContentLoaded', () => {
+    if(window.innerWidth < 720){
+        trending(18,0).then(data => drawTrendsOnLoad(data))
+    }
+    else{
+        trending(3,0).then(data => drawTrendsOnLoad(data))
+    }
+    
+}); 
+
 
 document.getElementById("scroll-next").addEventListener("click", () => {
     trendingOffset += 3;

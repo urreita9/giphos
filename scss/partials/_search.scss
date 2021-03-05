@@ -368,12 +368,23 @@
                 .like-icon{
                     background-image: url("../assets/icon-fav.svg");
                     background-repeat: no-repeat;
-                    width: 30px;
-                    height: 30px;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
                     margin-top: 10%;
                     margin-right: 10px;
                     
                 }
+                .like-icon.purple-like{
+                    background-image: url("../assets/icon-fav-active.svg");
+                    background-position: center;
+                    background-color: #FFFFFF;
+                    background-size: 55%;
+                    background-repeat: no-repeat;
+                    border: 1px solid #572EE5;
+                    border-radius: 25%;
+                }
+                
                 .like-icon:hover{
                     background-image: url("../assets/icon-fav-hover.svg");
                 }
@@ -386,9 +397,11 @@
                 .download-icon{
                     background-image: url("../assets/icon-download.svg");
                     background-repeat: no-repeat;
-                    width: 30px;
-                    height: 30px;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
                     margin-top: 10%;
+                    margin-right: 10px;
                 }
             }
         }

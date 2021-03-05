@@ -322,6 +322,7 @@ function setToFavorites(selectedGif, likeBtn){
     let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
         if(!favoritos){
             favoritos=[];
+            // emptyFavs();
         }
         
         let wasinarray = false;
@@ -431,7 +432,7 @@ function fullScreen(selectedGif){
         titleInfo.textContent = selectedGif.title;
 
     }
-
+    purpleBtn(likeBtn, selectedGif);
     // console.log(selectedGif);
     document.getElementById("search-section").appendChild(fullscreenContainer);
     if(selectedGif.number == 3){
@@ -447,7 +448,7 @@ function fullScreen(selectedGif){
         // fullscreenContainer.classList.remove("fullscreen-container");
     });
     
-    likeBtn.addEventListener("click", ()=> setToFavorites(selectedGif));
+    likeBtn.addEventListener("click", ()=> setToFavorites(selectedGif, likeBtn));
     downloadIcon.addEventListener("click", () => {
         let link = selectedGif.url;
         downloadGifo(link);
@@ -665,6 +666,24 @@ function getFavorites(){
         drawHover(giphoDivContainer, element);
     });
 }
+// function emptyFavs(){
+//     const emptyFavsContainaer = document.createElement("div");
+//     const emptyFavsIcon = document.createElement("i");
+//     const emptyFavsP = document.createElement("p");
+
+//     emptyFavsContainaer.classList.add("empty-favs-container");
+//     emptyFavsIcon.classList.add("empty-favs-icon");
+//     emptyFavsP.classList.add("empty-favs-p");
+
+//     document.querySelector(".on-favorites").appendChild(emptyFavsContainaer);
+//     emptyFavsContainaer.appendChild(emptyFavsIcon);
+//     emptyFavsContainaer.appendChild(emptyFavsP);
+
+//     emptyFavsP.textContent = '"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"';
+// }
+// function clearEmptyFavs(){
+//     document.querySelector(".on-favorites").removeChild(emptyFavsContainaer);
+// }
 
 //VIDEO
 let constraintObj = { 

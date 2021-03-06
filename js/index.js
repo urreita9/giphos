@@ -61,10 +61,12 @@ input.addEventListener("keyup", (e) =>{
             removeLupaIcon();
             lupa.classList.remove("lupa-cross");
             clearSuggestionsContainerContent();
+            
             // removeLupaIcon();
         }
     }else{
         lupa.classList.remove("lupa-cross");
+        // input.value = "";
         // removeLupaIcon();
         clearSuggestionsContainerContent();
     }

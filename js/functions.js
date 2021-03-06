@@ -112,6 +112,8 @@ function storeSearchValue(){
     if(limit != 1){
         search(limit, offset).then(data => drawGifOnSearch(data));
     }
+    setInputValueToLocalStorageAndErase()
+    // input.value = "";
     // clearInput();   
 }
 
@@ -265,7 +267,7 @@ function drawHover (giphoDivContainer,selectedGif){
     
     if(window.innerWidth < 720){
         giphoDivContainer.addEventListener("click", () => {
-            hoverContainer.classList.toggle("active");
+            fullScreen(selectedGif);
         })
     }
     
@@ -331,7 +333,6 @@ function setToFavorites(selectedGif, likeBtn){
                 favoritos.splice(i,1);
                 wasinarray = true;
                 selectedGif.number == 3? location.reload(): console.log("no es favoritos");
-                console.log(likeBtn)
                 likeBtn.classList.remove("purple-like");
     
             }
@@ -449,6 +450,7 @@ function fullScreen(selectedGif){
     });
     
     likeBtn.addEventListener("click", ()=> setToFavorites(selectedGif, likeBtn));
+
     downloadIcon.addEventListener("click", () => {
         let link = selectedGif.url;
         downloadGifo(link);

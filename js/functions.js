@@ -775,6 +775,7 @@ function doMyVideo(stream){
             clear();
             clockContainer.addEventListener("click", () => {
                 if(clock.textContent == "REPETIR CAPTURA"){
+                    clock.classList.add("active");
                     document.getElementById("center-screen").removeChild(myVideo);
                     document.querySelector(".comenzar-btn").style.display = "none";
                     clockContainer.innerHTML = "";
@@ -800,6 +801,7 @@ function doMyVideo(stream){
                 console.log(form.get('file'));
 
                 // document.querySelector(".comenzar-btn").classList.add("active");
+                clock.classList.remove("active");
                 clockContainer.innerHTML = "";
                 stepTwoBtn.classList.remove("active");
                 stepThreeBtn.classList.add("active");

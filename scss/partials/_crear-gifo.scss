@@ -124,6 +124,8 @@
     .steps{
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
         .buttons{
             width: 20px;
             height: 20px;
@@ -139,6 +141,14 @@
     #step-1.active, #step-2.active, #step-3.active{
         background-color: #572EE5;
         color: white;
+    }
+    .clock{
+        font-family: "Montserrat", sans-serif;
+        color: #572EE5;
+        font-weight: bolder;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
     }
     .purple-line{
         width: 100%;

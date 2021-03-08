@@ -118,6 +118,9 @@
             margin: 0 auto;
             line-height: 25px;
         }
+        .trending-p-topics{
+            cursor: pointer;
+        }
     }
     .giphos-search-container{
         display: grid;
@@ -230,11 +233,10 @@
 
                             }
                             .footer-container{
-                                // position: absolute;
-                                // bottom: 0;
-                                // left: 0;
                                 width: 100%;
                                 height: 60%;
+                                position: absolute;
+                                bottom: 0;
                                 .user-p-container{
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 10px;
@@ -346,14 +348,14 @@
             }
             
         }
-        .footer-container{
+        .footer-container-full{
             display: flex;
             justify-content: space-between;
             text-align: center;
             width: 90%;
             height: 36%;
             margin: 0 auto;
-            max-width: 350px;
+            max-width: 430px;
             .footer-data-container{
                 text-align: left; 
                 .user-info{

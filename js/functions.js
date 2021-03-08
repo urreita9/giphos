@@ -207,12 +207,14 @@ function setInputValueToLocalStorageAndErase(){
     removeLupaIcon();
     let inputSearch = input.value;
     localStorage.setItem("myInputs", JSON.stringify(inputSearch));
-    console.log(localStorage);
+    // console.log(localStorage);
     if(inputSearch == ""){
         storeSearchValue();
         inputSearch = "";
+        // input.textContent = "";
     } else{
         inputSearch = "";
+        // input.textContent = "";
     }
 }
 //Funcion que dibuja los hover sobre los gifs
@@ -324,8 +326,10 @@ function setToFavorites(selectedGif, likeBtn){
     let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
         if(!favoritos){
             favoritos=[];
-            // emptyFavs();
+            console.log(favoritos)
+            
         }
+        
         
         let wasinarray = false;
         for(let i=0; i < favoritos.length; i++){
@@ -382,7 +386,7 @@ function fullScreen(selectedGif){
     fullscreenContainer.classList.add("fullscreen-container");
     crossContainer.classList.add("cross-container");
     scrollContainer.classList.add("scroll-container");
-    footerContainer.classList.add("footer-container");
+    footerContainer.classList.add("footer-container-full");
 
     crossIcon.classList.add("cross-icon-1");
 
@@ -610,14 +614,31 @@ function trendingTopics(){
 }
 function drawTrendingTopics(dataApiObject){
     const trendingArray = dataApiObject.data;
-    let myTitlesArray = [];
+    // let myTitlesArray = [];
     let trendingText = document.getElementById("trending-topics");
     for(let i = 0; i<5; i++){
         let myTitles = trendingArray[i].charAt(0).toUpperCase() + trendingArray[i].slice(1)
-        myTitlesArray.push(myTitles);
+        const trendingP = document.createElement("span");
+        const coma = document.createElement("span");
+        trendingP.classList.add("trending-p-topics");
+        coma.classList.add("coma");
+
+        coma.textContent = ", ";
+        trendingP.textContent = myTitles;
+        console.log(myTitles);
+        trendingText.appendChild(trendingP);
+        trendingText.appendChild(coma);
+        if(i == 4){
+            trendingText.removeChild(coma);
+        }
+        trendingP.addEventListener("click", () => {
+            input.value = myTitles;
+            storeSearchValue();
+        });
+        // myTitlesArray.push(myTitles);
     }
-    trendingText.innerText = myTitlesArray.join(", ");
-    trendingText.addEventListener("click", console.log(trendingText.textContent));
+    // trendingText.innerText = myTitlesArray.join(", ");
+    // trendingText.addEventListener("click", console.log(trendingText.textContent));
     
 }
 function drawTrendsOnLoad(data){
@@ -668,24 +689,24 @@ function getFavorites(){
         drawHover(giphoDivContainer, element);
     });
 }
-// function emptyFavs(){
-//     const emptyFavsContainaer = document.createElement("div");
-//     const emptyFavsIcon = document.createElement("i");
-//     const emptyFavsP = document.createElement("p");
+function emptyFavs(){
+    const emptyFavsContainaer = document.createElement("div");
+    const emptyFavsIcon = document.createElement("i");
+    const emptyFavsP = document.createElement("p");
 
-//     emptyFavsContainaer.classList.add("empty-favs-container");
-//     emptyFavsIcon.classList.add("empty-favs-icon");
-//     emptyFavsP.classList.add("empty-favs-p");
+    emptyFavsContainaer.classList.add("empty-favs-container");
+    emptyFavsIcon.classList.add("empty-favs-icon");
+    emptyFavsP.classList.add("empty-favs-p");
 
-//     document.querySelector(".on-favorites").appendChild(emptyFavsContainaer);
-//     emptyFavsContainaer.appendChild(emptyFavsIcon);
-//     emptyFavsContainaer.appendChild(emptyFavsP);
+    document.getElementById("favoritos").appendChild(emptyFavsContainaer);
+    emptyFavsContainaer.appendChild(emptyFavsIcon);
+    emptyFavsContainaer.appendChild(emptyFavsP);
 
-//     emptyFavsP.textContent = '"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"';
-// }
-// function clearEmptyFavs(){
-//     document.querySelector(".on-favorites").removeChild(emptyFavsContainaer);
-// }
+    emptyFavsP.textContent = '"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"';
+}
+function clearEmptyFavs(){
+    document.querySelector(".on-favorites").removeChild(emptyFavsContainaer);
+}
 
 //VIDEO
 let constraintObj = { 
@@ -711,7 +732,7 @@ function doMyVideo(stream){
     const recordMyVideoBtn = document.createElement("div");
     const btnText = document.createElement("p");
     clearButtonStepOne(recordMyVideoBtn, btnText);
-
+    stepOneBtn.classList.add("active");
     const myVideo = document.createElement("video");
     myVideo.setAttribute("id", "vid");
     myVideo.autoplay = true;
@@ -734,10 +755,10 @@ function doMyVideo(stream){
     
 
     recordMyVideoBtn.addEventListener('click', ()=>{
-        
+            interval();
             recorder.startRecording();
             console.log(recorder.state);
-        document.getElementById("gifo-steps").removeChild(recordMyVideoBtn);
+            document.getElementById("gifo-steps").removeChild(recordMyVideoBtn);
         
         const endRecordingBtn = document.createElement("div");
         const endBtnText = document.createElement("p");
@@ -749,7 +770,16 @@ function doMyVideo(stream){
             const uploadRecording = document.createElement("div");
             const uploadRecordingText = document.createElement("p");
             clearButtonStepThree(uploadRecording, uploadRecordingText);
-
+            clear();
+            clockContainer.addEventListener("click", () => {
+                if(clock.textContent == "REPETIR CAPTURA"){
+                    document.getElementById("center-screen").removeChild(myVideo);
+                    document.querySelector(".comenzar-btn").style.display = "none";
+                    clockContainer.innerHTML = "";
+                    restartClock();
+                    doMyVideo(stream);
+                }
+            })
             recorder.stopRecording(() => {
                 let blob = recorder.getBlob();
                 let url = URL.createObjectURL(blob);
@@ -761,12 +791,16 @@ function doMyVideo(stream){
             uploadRecording.addEventListener("click", ()=>{
                 document.getElementById("gifo-steps").removeChild(uploadRecording);
                 
+                tester = true;
                 myVideo.pause();
                 let form = new FormData();;
                 form.append('file', recorder.getBlob(), 'myGif.gif');
                 console.log(form.get('file'));
 
-                
+                // document.querySelector(".comenzar-btn").classList.add("active");
+                clockContainer.innerHTML = "";
+                stepTwoBtn.classList.remove("active");
+                stepThreeBtn.classList.add("active");
                     drawUploadingHover();
                     uploadMyGifo(form);
                 
@@ -794,7 +828,10 @@ function downloadGifo(link){
 }
 
 function clearButtonStepOne(recordBtn, recordTextBtn){
-    document.getElementById("gifo-steps").removeChild(startBtn);
+    if(tester){
+        document.getElementById("gifo-steps").removeChild(startBtn);
+    }
+    
     recordTextBtn.classList.add("btn-text");
     recordTextBtn.textContent = "GRABAR";
     recordBtn.appendChild(recordTextBtn);
@@ -933,4 +970,69 @@ function drawUploadingHover(){
     waitingHover.appendChild(loadingText);
 
     loadingText.textContent= "Estamos subiendo tu GIFO";
+}
+
+const stepsContainer = document.getElementById("steps");
+let s = 0;
+let m = 0;
+let h = 0;
+let timer;
+const clockContainer = document.createElement("div");
+clockContainer.classList.add("clock"); 
+let clock = document.createElement("p");
+let tester = true;
+
+function clockWork(){
+    s++;
+    if(s == 60){
+        m++;
+        s = 0;
+    }
+    if(m == 60){
+        h++;
+        m = 0;
+    }
+    if(h == 24){
+        h = 0;
+    }
+    drawClock(s, m, h);
+}
+
+function drawClock(s, m, h){
+    
+    clockContainer.innerHTML = "";
+    
+    
+    if(s < 10){
+        s = "0" + s;
+    }
+    if(m < 10){
+        m = "0" + m;
+    }
+    if(h < 10){
+        h = "0" + h;
+    }
+    clock.innerText = `${h} : ${m} : ${s}`
+    stepsContainer.appendChild(clockContainer);
+    clockContainer.appendChild(clock);
+}
+function interval(){ 
+    if(!timer){
+        timer = setInterval(clockWork, 1000); 
+    }
+    
+}
+
+function clear(){
+    clearInterval(timer);
+    clock.textContent = "REPETIR CAPTURA";
+    
+}
+
+function restartClock(){
+    timer = false;
+    tester = false;
+    s = 0;
+    m = 0;
+    h = 0;
 }

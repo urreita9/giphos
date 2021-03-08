@@ -194,9 +194,9 @@
                                 .icon-one-container.on-favs{
                                     background-image: url("../assets/icon-trash-normal.svg");
                                 }
-                                .icon-one-container.on-favs:hover{
-                                    background-image: url("../assets/icon-trash-hover.svg");
-                                }
+                                // .icon-one-container.on-favs:hover{
+                                //     background-image: url("../assets/icon-trash-hover.svg");
+                                // }
                                 .icon-two-container{
                                     background-image: url("../assets/icon-download.svg");
                                     background-repeat: no-repeat;
@@ -214,22 +214,22 @@
                                     margin: 13px 7px 7px 0;
                                 }
                                 
-                                .icon-one-container:hover{
-                                    background-image: url("../assets/icon-fav-hover.svg");
+                                // .icon-one-container:hover{
+                                //     background-image: url("../assets/icon-fav-hover.svg");
                                     
-                                }
-                                // .icon-one-container.like-icon-active{
-                                //     background-image: url("../assets/icon-fav-active.svg");
                                 // }
+                                .icon-one-container.like-icon-active{
+                                    background-image: url("../assets/icon-fav-active.svg");
+                                }
                                 
                                 .icon-two-container:hover{
                                     background-image: url("../assets/icon-download-hover.svg");
                                     
                                 }
-                                .icon-three-container:hover{
-                                    background-image: url("../assets/icon-max-hover.svg");
+                                // .icon-three-container:hover{
+                                //     background-image: url("../assets/icon-max-hover.svg");
                                     
-                                }
+                                // }
 
                             }
                             .footer-container{
@@ -387,15 +387,15 @@
                     border-radius: 25%;
                 }
                 
-                .like-icon:hover{
-                    background-image: url("../assets/icon-fav-hover.svg");
-                }
+                // .like-icon:hover{
+                //     background-image: url("../assets/icon-fav-hover.svg");
+                // }
                 .like-icon.on-favs{
                     background-image: url("../assets/icon-trash-normal.svg");
                 }
-                .like-icon.on-favs:hover{
-                    background-image: url("../assets/icon-trash-hover.svg");
-                }
+                // .like-icon.on-favs:hover{
+                //     background-image: url("../assets/icon-trash-hover.svg");
+                // }
                 .download-icon{
                     background-image: url("../assets/icon-download.svg");
                     background-repeat: no-repeat;

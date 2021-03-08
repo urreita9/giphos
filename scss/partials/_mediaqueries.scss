@@ -92,7 +92,20 @@
                     opacity: 0.8;
                 }
             }
-            
+            .icon-one-container:hover{
+                background-image: url("../assets/icon-fav-hover.svg");
+            }
+            .icon-one-container.on-favs:hover{
+                background-image: url("../assets/icon-trash-hover.svg");
+            }
+            .icon-three-container:hover{
+                background-image: url("../assets/icon-max-hover.svg");
+                
+            }
+            .icon-two-container:hover{
+                background-image: url("../assets/icon-download-hover.svg");
+                
+            }
             // .on-favorites{
             //     display: flex;
             //     flex-wrap: wrap;
@@ -210,6 +223,12 @@
                                 height: 20px;
                                 margin-top: 10%;
                                 
+                            }
+                            .like-icon:hover{
+                                background-image: url("../assets/icon-fav-hover.svg");
+                            }
+                            .like-icon.on-favs:hover{
+                                background-image: url("../assets/icon-trash-hover.svg");
                             }
                             .like-icon .purple-like{
                                 background-image: url("../assets/icon-fav-active.svg");

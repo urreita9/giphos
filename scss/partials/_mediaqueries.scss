@@ -54,6 +54,14 @@
         .crear-gifo:hover{
             background-image: url("../assets/CTA-crear-gifo-hover.svg");
         }
+        .clock{
+            font-family: "Montserrat", sans-serif;
+            color: #572EE5;
+            font-weight: bolder;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
 
 }
     //SECTION TITLE
@@ -286,6 +294,17 @@
         left: 16.4%;
         }
     }
+    .steps{
+        flex-direction: row;
+    }
+    .clock{
+        position: absolute;
+        right: 0;
+    }
+    .clock:hover{
+        text-decoration: underline 2px;
+        text-decoration-color: #5ED7C6;
+    }
     .footer_social{
         display: flex;
         justify-content: space-between;
@@ -348,7 +367,9 @@
         .cross-icon-1{
             background-image: url("../assets/close-modo-noct.svg");
         }
+        
     }
+    
 
     //TRENDING
     

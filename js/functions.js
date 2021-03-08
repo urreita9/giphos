@@ -102,6 +102,7 @@ function removeLupaIcon(){
 
 function clearSuggestionsContainerContent(){
     suggestionContainer.innerHTML = "";
+    
 }
 
 function storeSearchValue(){
@@ -153,7 +154,8 @@ function drawGifOnSearch(data){
     console.log(data);
     clearSuggestionsContainerContent();
     const searchTitle = document.getElementById("giphos-search-title");
-    searchTitle.innerText = input.value
+    searchTitle.innerText = JSON.parse(localStorage.getItem("myInputs"));
+    input.value = "";
     let giphosContainer = document.getElementById("giphos-search-container");
         console.log(data);
 

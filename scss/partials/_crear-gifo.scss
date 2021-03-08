@@ -126,6 +126,10 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        flex-direction: column;
+        .steps-buttons{
+            display: flex;
+        }
         .buttons{
             width: 20px;
             height: 20px;
@@ -146,8 +150,7 @@
         font-family: "Montserrat", sans-serif;
         color: #572EE5;
         font-weight: bolder;
-        position: absolute;
-        right: 0;
+        margin: 0 auto;
         cursor: pointer;
     }
     .purple-line{

@@ -10,8 +10,10 @@ const iconNoResultsInFav = document.createElement("div");
 const textNoResultsInFav = document.createElement("p");
 
 
-const FAVORITO = "storageFavorito";
+// const FAVORITO = "storageFavorito";
 
+let verMas = document.getElementById("ver-mas-btn");
+verMas.addEventListener("click", addCurrentPage);
 
 let favsArray= [];
 let trendingArray = [];

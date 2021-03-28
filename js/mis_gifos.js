@@ -10,7 +10,7 @@ const iconNoResultsInFav = document.createElement("div");
 const textNoResultsInFav = document.createElement("p");
 
 const MIS_GIFOS = "storageMisGifos";
-const FAVORITO = "storageFavorito";
+// const FAVORITO = "storageFavorito";
 
 let misGifosArray= [];
 let trendingArray = [];

@@ -1,4 +1,32 @@
-.empty-favs-container{
-    width: 100%;
-    height: 500px;
+.empty-favs-container, .empty-Gifos-container{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #50E3C2;
+    text-align: center;
+    .empty-favs-icon,  .empty-Gifos-icon{
+        background-image: url("../assets/icon-fav-sin-contenido.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        margin: 40px auto 20px auto;
+    }
+    p{
+        max-width: 320px;
+        margin: 20px auto 40px auto;;
+    }
 }
+.empty-Gifos-container{
+    .empty-Gifos-icon{
+        background-image: url("../assets/icon-mis-gifos-sin-contenido.svg");
+       }
+    }
+
+.giphos-search-container.on-favorites{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1% 10%;
+        grid-template-rows: none;
+}
+   

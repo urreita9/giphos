@@ -668,32 +668,72 @@ function drawTrendsOnLoad(data){
     }
 
 }
-
+const FAVORITO = "storageFavorito";
+let currentPage= 1;
+let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
 function getFavorites(){
     let giphosContainer = document.getElementById("giphos-search-container");
-    let favoritos = JSON.parse(localStorage.getItem(FAVORITO));
-    favoritos.forEach(element => {
+    
+    if(!favoritos || favoritos.length === 0){
+        emptyFavs();
+    }else{
         
-        let giphoDivContainer = document.createElement("div");
-        giphoDivContainer.classList.add("gipho-div-container");
-        let gipho = document.createElement("img");
-        gipho.src = element.url;
-        // console.log(element);
-
-        favsArray.push(element);
-        //console.log(favsArray);
-        // let user = element.username;
-        // let title = element.title;
-        gipho.classList.add("gipho");
-        giphosContainer.appendChild(giphoDivContainer);
-        giphoDivContainer.appendChild(gipho);
-        document.getElementById("ver-mas-btn").classList.add("ver-mas-btn");
-        drawHover(giphoDivContainer, element);
-    });
+        for(let i = (currentPage - 1) * 12; (i < (12 * currentPage)) &&  i < favoritos.length; i ++){
+            let giphoDivContainer = document.createElement("div");
+            giphoDivContainer.classList.add("gipho-div-container");
+            let gipho = document.createElement("img");
+            gipho.src = favoritos[i].url;
+            // console.log(element);
+    
+            // favsArray.push(favoritos[i]);
+            //console.log(favsArray);
+            // let user = element.username;
+            // let title = element.title;
+            gipho.classList.add("gipho");
+            giphosContainer.appendChild(giphoDivContainer);
+            giphoDivContainer.appendChild(gipho);
+            document.getElementById("ver-mas-btn").classList.add("ver-mas-btn");
+            drawHover(giphoDivContainer, favoritos[i]);
+        }
+        // favoritos.forEach(element => {
+        
+        //     let giphoDivContainer = document.createElement("div");
+        //     giphoDivContainer.classList.add("gipho-div-container");
+        //     let gipho = document.createElement("img");
+        //     gipho.src = element.url;
+        //     // console.log(element);
+    
+        //     favsArray.push(element);
+        //     //console.log(favsArray);
+        //     // let user = element.username;
+        //     // let title = element.title;
+        //     gipho.classList.add("gipho");
+        //     giphosContainer.appendChild(giphoDivContainer);
+        //     giphoDivContainer.appendChild(gipho);
+        //     document.getElementById("ver-mas-btn").classList.add("ver-mas-btn");
+        //     drawHover(giphoDivContainer, element);
+        // });
+    }
+    console.log(favoritos.length);
+    checkVerMas();
+    
+}
+function addCurrentPage(){
+    currentPage ++;
+    getFavorites();
+}
+function checkVerMas(){
+    if(currentPage * 12 < favoritos.length){
+        verMas.classList.remove("active");
+        //desaparece
+    } else{
+        verMas.classList.add("active");
+        // currentPage += 1;
+    }
 }
 function emptyFavs(){
     const emptyFavsContainaer = document.createElement("div");
-    const emptyFavsIcon = document.createElement("i");
+    const emptyFavsIcon = document.createElement("div");
     const emptyFavsP = document.createElement("p");
 
     emptyFavsContainaer.classList.add("empty-favs-container");
@@ -705,6 +745,21 @@ function emptyFavs(){
     emptyFavsContainaer.appendChild(emptyFavsP);
 
     emptyFavsP.textContent = '"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"';
+}
+function emptyGifos(){
+    const emptyGifosContainaer = document.createElement("div");
+    const emptyGifosIcon = document.createElement("div");
+    const emptyGifosP = document.createElement("p");
+
+    emptyGifosContainaer.classList.add("empty-Gifos-container");
+    emptyGifosIcon.classList.add("empty-Gifos-icon");
+    emptyGifosP.classList.add("empty-Gifos-p");
+
+    document.getElementById("mis-gifos").appendChild(emptyGifosContainaer);
+    emptyGifosContainaer.appendChild(emptyGifosIcon);
+    emptyGifosContainaer.appendChild(emptyGifosP);
+
+    emptyGifosP.textContent = '"¡Anímate a crear tu primer GIFO!"';
 }
 function clearEmptyFavs(){
     document.querySelector(".on-favorites").removeChild(emptyFavsContainaer);
@@ -935,20 +990,23 @@ function saveToLocalStorage(data){
 function drawMisGifos(){
     let giphosContainer = document.getElementById("giphos-search-container");
     let misGifos = (JSON.parse(localStorage.getItem("storageMisGifos")));
-    console.log(misGifos);
-    for(let i= 0; i < misGifos.length; i++){
-        let giphoDivContainer = document.createElement("div");
-        giphoDivContainer.classList.add("gipho-div-container");
-        let gipho = document.createElement("img");
-
-        gipho.src = misGifos[i].url;
-        
-
-        gipho.classList.add("gipho");
-        giphosContainer.appendChild(giphoDivContainer);
-        giphoDivContainer.appendChild(gipho);
-        document.getElementById("ver-mas-btn").classList.add("ver-mas-btn");
-        drawHover(giphoDivContainer, misGifos[i]);
+    if(!misGifos || misGifos?.length == 0){
+        emptyGifos();
+    }else{
+        for(let i= 0; i < misGifos.length; i++){
+            let giphoDivContainer = document.createElement("div");
+            giphoDivContainer.classList.add("gipho-div-container");
+            let gipho = document.createElement("img");
+    
+            gipho.src = misGifos[i].url;
+            
+    
+            gipho.classList.add("gipho");
+            giphosContainer.appendChild(giphoDivContainer);
+            giphoDivContainer.appendChild(gipho);
+            document.getElementById("ver-mas-btn").classList.add("ver-mas-btn");
+            drawHover(giphoDivContainer, misGifos[i]);
+        }
     }
 }
 

@@ -73,7 +73,7 @@ input.addEventListener("keyup", (e) =>{
 })
 
 let lupa = document.getElementById("lupa");
-let verMas = document.getElementById("ver-mas-btn")
+let verMas = document.getElementById("ver-mas-btn");
 
 verMas.addEventListener("click", addOffset);
 lupa.addEventListener("click", setInputValueToLocalStorageAndErase);

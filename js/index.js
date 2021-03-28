@@ -11,7 +11,7 @@ const ouch = document.createElement("div");
 const tryAgain = document.createElement("p");
 const suggestionContainer = document.createElement("div");
 
-const FAVORITO = "storageFavorito";
+// const FAVORITO = "storageFavorito";
 
 //Array con resultados search
 let searchArray = [];

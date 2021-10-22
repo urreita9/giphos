@@ -1,109 +1,106 @@
-header{
-    width: 100%;
-    height: 95px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+header {
+	width: 100%;
+	height: 95px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	.logo {
+		width: 48.8px;
+		height: 48.8px;
+		margin-left: 5%;
+		background-image: url('../assets/logo-mobile.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	#ham-btn-id {
+		margin-right: 5%;
+		position: relative;
+		z-index: 10;
+		width: 20px;
+		height: 20px;
+		border: none;
+		background-image: url('../assets/burger.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		transition: 0.2s ease;
+	}
+	#ham-btn-id.active {
+		background-image: url('../assets/close.svg');
+	}
+	// #ham-btn-id
 
-    .logo{
-        width: 48.8px;
-        height: 48.8px;
-        margin-left: 5%;
-        background-image: url("../assets/logo-mobile.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    #ham-btn-id{
-        margin-right: 5%;
-        position: relative;
-        z-index: 10;
-        width: 20px;
-        height: 20px;
-        border: none;
-        background-image: url("../assets/burger.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        transition: 0.2s ease;
-    }
-    #ham-btn-id.active{
-        background-image: url("../assets/close.svg");
-        
-    }
-    // #ham-btn-id 
+	#menu {
+		background-color: #572ee5;
+		opacity: 0.9;
+		position: absolute;
+		top: 95px;
+		width: 100vw;
+		height: 100vh;
+		transition: 0.2s ease;
+		z-index: 1;
+		display: none;
+	}
+	#menu.active {
+		display: block;
+	}
+	// .active{
+	//     display: none;
+	//     transition: 0.2s ease;
+	// }
+	.menu-list {
+		box-sizing: border-box;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: space-around;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.menu-list li {
+		padding: 5% 0;
+	}
+	// .crear-gifo{
+	//     display: none;
+	// }
+	.crear-gifo {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		background-image: url('../assets/button-crear-gifo.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.crear-gifo:hover {
+		background-image: url('../assets/CTA-crear-gifo-hover.svg');
+		border: 1px solid white;
+		border-radius: 50%;
+	}
+	.menu-list li a {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+	}
 
-    
-        #menu{
-            background-color: #572EE5;
-            opacity: 0.9;
-            position: absolute;
-            top: 95px;
-            width: 100vw;
-            height: 100vh;
-            transition: 0.2s ease;
-            z-index: 1;
-            display: none;
-        }
-        #menu.active{
-            display: block;
-        }
-    // .active{
-    //     display: none;
-    //     transition: 0.2s ease;
-    // }
-    .menu-list{
-        box-sizing: border-box;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // justify-content: space-around;
-        height: 100%;
-        margin: 0 auto;
-    }
-    .menu-list li{
-        padding: 5% 0;
-    
-    }
-    // .crear-gifo{
-    //     display: none;
-    // }
-    .crear-gifo{
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        background-image: url("../assets/button-crear-gifo.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .crear-gifo:hover{
-        background-image: url("../assets/CTA-crear-gifo-hover.svg");
-        border: 1px solid white;
-        border-radius: 50%;
-    }
-    .menu-list li a{
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-    }
-    
-//     .logo{
-//         background-image: url(../assets/logo-mobile.svg);
-//         background-repeat: no-repeat;
-//         background-size: 30px 30px;
-//         width: 13%;
-//         height: 13%;
-//   }
+	//     .logo{
+	//         background-image: url(../assets/logo-mobile.svg);
+	//         background-repeat: no-repeat;
+	//         background-size: 30px 30px;
+	//         width: 13%;
+	//         height: 13%;
+	//   }
 }
-.border{
-    background-color: #572EE5;
-    width: 100%;
-    height: 5px;
+.border {
+	background-color: #572ee5;
+	width: 100%;
+	height: 5px;
+}
+.top {
+	padding-top: 5px;
 }
 //Class para cambiar boton hamburguesa por boton cruz con JS
 
-
 //Class para cambiar boton hamburguesa por boton cruz con JS en modo Nocturno
-

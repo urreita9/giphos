@@ -1,89 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu GIFO</title>
-    
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body id="body">
-    <div id="border">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Crea tu GIFO</title>
 
-    </div>
-    <header>
-        <a href="index.html" class="logo" id="logo"></a>
-        <div id="ham-btn-id"></div>
-        <nav id="menu">
-            <ul class="menu-list">
-                <li><a href="#" id="darky">Modo Nocturno</a></li>
-                <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="mis_gifos.html">Mis GIFOS</a></li>
-                <li><a href="crear_gifo.html"><div class="crear-gifo"></div></a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- <section class="title">
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body id="body">
+		<div class="border top"></div>
+		<header>
+			<a href="index.html" class="logo" id="logo"></a>
+			<div id="ham-btn-id"></div>
+			<nav id="menu">
+				<ul class="menu-list">
+					<li><a href="#" id="darky">Modo Nocturno</a></li>
+					<li><a href="favoritos.html">Favoritos</a></li>
+					<li><a href="mis_gifos.html">Mis GIFOS</a></li>
+					<li>
+						<a href="crear_gifo.html"><div class="crear-gifo"></div></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- <section class="title">
         <h1>Inspírate, busca, guarda, y crea los mejores <span>gifos</span></h1>
     </section> -->
-    <section class="gifo-screen" id="gifo-screen">
-        <div class="center-screen" id="center-screen">
-            <div id="text-on-screen">
-                <h2 id="title-screen">Aquí podrás <br> crear tus propios <span>GIFOS</span></h2>
-                <p id="p1-screen">¡Crea tu GIFO en sólo 3 pasos!</p>
-                <p id="p2-screen">(sólo necesitas una cámara para grabar un video)</p>
-            </div>
-        </div>
+		<section class="gifo-screen" id="gifo-screen">
+			<div class="center-screen" id="center-screen">
+				<div id="text-on-screen">
+					<h2 id="title-screen">
+						Aquí podrás <br />
+						crear tus propios <span>GIFOS</span>
+					</h2>
+					<p id="p1-screen">¡Crea tu GIFO en sólo 3 pasos!</p>
+					<p id="p2-screen">(sólo necesitas una cámara para grabar un video)</p>
+				</div>
+			</div>
+		</section>
+		<i class="camera"></i>
+		<i class="path"></i>
+		<section class="gifo-steps" id="gifo-steps">
+			<div class="steps" id="steps">
+				<div class="steps-buttons">
+					<div class="buttons" id="step-1">1</div>
+					<div class="buttons" id="step-2">2</div>
+					<div class="buttons" id="step-3">3</div>
+				</div>
+			</div>
+			<div class="purple-line"></div>
+			<div class="comenzar-btn" id="comenzar-btn">
+				<p id="btn-text">COMENZAR</p>
+			</div>
+		</section>
+		<footer class="footer_social">
+			<div class="social-container">
+				<p class="compartir">Compartir en:</p>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/"
+								><i class="fab fa-facebook-f"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/?lang=es"
+								><i class="fab fa-twitter"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=es-la"
+								><i class="fab fa-instagram"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="derechos">GIFOS 2020 All Rights Reserved.</p>
+		</footer>
 
-    </section>
-    <i class="camera"></i>
-    <i class="path"></i>
-    <section class="gifo-steps" id="gifo-steps">
-        <div class="steps" id="steps">
-            <div class="steps-buttons">
-                <div class="buttons" id="step-1">1</div>
-                <div class="buttons" id="step-2">2</div>            
-                <div class="buttons" id="step-3">3</div>
-            </div>
-        </div>
-        <div class="purple-line">
-
-        </div>
-        <div class="comenzar-btn" id="comenzar-btn">
-            <p id="btn-text">COMENZAR</p>
-        </div>
-    </section>
-    <footer class="footer_social">
-        <div class="social-container">
-            <p class="compartir">Compartir en:</p>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <p class="derechos">GIFOS 2020 All Rights Reserved.</p>
-    </footer>
-    
-    
-    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-    <script src="./js/video.js"></script>
-    <script src="./js/functions.js"></script>
-    <script src="./js/crear_gifo.js"></script>
-   
-</body>
+		<div class="border top"></div>
+		<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+		<script src="./js/video.js"></script>
+		<script src="./js/functions.js"></script>
+		<script src="./js/crear_gifo.js"></script>
+	</body>
 </html>

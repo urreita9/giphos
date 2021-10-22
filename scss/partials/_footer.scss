@@ -1,34 +1,35 @@
-.footer_social{
-    margin: 0 auto;
-    text-align: center;
-    .compartir{
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-    }
-    .social{
-        
-        align-items: center;
-        margin: 0 auto;
-        ul{
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            li{
-                padding: 0 5%;
-                    a{
-                    color: #CDD6E0;
-                    font-size: 20px;
-                    }
-            }
-        }
-    }
-    .derechos{
-        font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-    }
+.footer_social {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+
+	.compartir {
+		font-size: 15px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+	}
+	.social {
+		align-items: center;
+		margin: 0 auto;
+		ul {
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			li {
+				padding: 0 5%;
+				a {
+					color: #cdd6e0;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.derechos {
+		font-size: 14px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+	}
 }

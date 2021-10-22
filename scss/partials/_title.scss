@@ -1,34 +1,35 @@
 // PESTAÑA HOME
-.title{
-    margin: 0.6% auto 0 auto;
-    max-width: 320px;
+.title {
+	margin: 0.6% auto 0 auto;
+	max-width: 320px;
 
-    h1{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        color: #572EE5;
-        text-align: center;
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		color: #572ee5;
+		text-align: center;
 
-        span{
-            text-transform: uppercase;
-            color: #5ED7C6;
-        }
-    }
+		span {
+			text-transform: uppercase;
+			color: #5ed7c6;
+		}
+	}
 }
 
 //PESTAÑA FAVORITOS
 
-.favoritos{
-    img{
-        display: block;
-        margin: 0 auto;
-    }
-    h1, h2{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        color: #572EE5;
-        text-align: center;
-    }
+.favoritos {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	h1,
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		color: #572ee5;
+		text-align: center;
+	}
 }

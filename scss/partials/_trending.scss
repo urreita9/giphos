@@ -1,170 +1,156 @@
-.trending{
-    margin: 0 auto;
-    text-align: center;
-    background: #F3F5F8;
-    padding-top: 2%;
-    .trending-h2{
-        color: #572EE5;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .trending-p{
-        box-sizing: border-box;
-        padding: 0 20%;
-        margin: 0 auto;
-        width: 88.8%;
-        font-family: 'Roboto', sans-serif;;
-        font-size: 16px;
-        line-height: 23px;
-    }
+.trending {
+	margin: 0 auto;
+	text-align: center;
+	background: #f3f5f8;
+	padding-top: 2%;
+	width: 100%;
+	.trending-h2 {
+		color: #572ee5;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.trending-p {
+		box-sizing: border-box;
+		padding: 0 20%;
+		margin: 0 auto;
+		width: 88.8%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height: 23px;
+	}
 }
-    .trending-scroll{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-        position: relative;
-    }
-    .trending-scroll-image-container{
-        display: flex;
-        justify-content: space-around;
-        overflow: scroll;
-        max-height: 200px;
-        max-width: max-content;
-    }
-       .trending-divs{
-        width: 200px;
-        height: 150px;
-        margin: 10px;
-        
-        position: relative;
-       }
-        .trending-giphs{
-            width: 200px;
-            height: 150px;
-            opacity: 1;
-        }
-            .hover-container{
-                width: 200px;
-                height: 150px;
-                // align-self: center;
-                // justify-self: center;
-                // margin-bottom: 30px;
-                // box-sizing: border-box;
-                background-color: #572EE5;
-                opacity: 0;
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                // object-fit: cover;
-            }
-            .hover-container.active{
-                opacity: 0.8;
-            }
-                .header-container{
-                            height: 15%;
-                            width: 100%;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: flex-end;
-                            align-items: center;
-                }
-                            .icon-one-container{
-                                background-image: url("../assets/icon-fav.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                width: 15px;
-                                height: 15px;
-                                margin-right: 7px;
-                            }
-                            .icon-one-container.purple-like{
-                                background-image: url("../assets/icon-fav-active.svg");
-                                background-position: center;
-                                background-color: #FFFFFF;
-                                background-size: 55%;
-                                background-repeat: no-repeat;
-                                border: 1px solid #572EE5;
-                                border-radius: 25%;
-                            }
-                            .icon-two-container{
-                                background-image: url("../assets/icon-download.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                width: 15px;
-                                height: 15px;
-                                margin-right: 7px;
-                            }
-                            .icon-three-container{
-                                background-image: url("../assets/icon-max-normal.svg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                width: 15px;
-                                height: 15px;
-                                margin-right: 7px;
-                            }
-                            .icon-one-container:hover{
-                                background-image: url("../assets/icon-fav-hover.svg");
-                                
-                            }
-                            .icon-two-container:hover{
-                                background-image: url("../assets/icon-download-hover.svg");
-                                
-                            }
-                            .icon-three-container:hover{
-                                background-image: url("../assets/icon-max-hover.svg");
-                                
-                            }
-                        
-                        .footer-container{
-                                    // position: absolute;
-                                    // bottom: 0;
-                                    // left: 0;
-                                    width: 100%;
-                                    height: 60%;
-                                    position: absolute;
-                                    bottom: 0;
-                        }
-                        .user-p-container, .title-container{
-                                        font-family: 'Roboto', sans-serif;
-                                        font-size: 10px;
-                                        font-weight: normal;
-                                        color: #FFFFFF;
-                                        margin-bottom: 5%;
-                                        margin-left: 5%;
-                                        text-align: justify;
-                                        max-width: 90%;
-                                    }
-                        .title-container{
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: bold;
-                                    }
-                                    // .hover-container:hover{
-                                    //     opacity: 0.8;
-                                    // }
-                                    .icon-one-container:hover{
-                                        background-image: url("../assets/icon-fav-hover.svg");
-                                        
-                                    }
-                                    .icon-two-container:hover{
-                                        background-image: url("../assets/icon-download-hover.svg");
-                                        
-                                    }
-                                    .icon-three-container:hover{
-                                        background-image: url("../assets/icon-max-hover.svg");
-                                        
-                                    }
-                                
-                        
-                 
-        
-             
-           
-        
-        
-       .trending-scroll-image-container::-webkit-scrollbar{
-        width: 0;
-        } 
+.trending-scroll {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+.trending-scroll-image-container {
+	display: flex;
+	justify-content: space-around;
+	overflow: scroll;
+	max-height: 200px;
+	max-width: max-content;
+}
+.trending-divs {
+	width: 200px;
+	height: 150px;
+	margin: 10px;
+
+	position: relative;
+}
+.trending-giphs {
+	width: 200px;
+	height: 150px;
+	opacity: 1;
+}
+.hover-container {
+	width: 200px;
+	height: 150px;
+
+	background-color: #572ee5;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	// object-fit: cover;
+}
+.hover-container.active {
+	opacity: 0.8;
+}
+.header-container {
+	height: 15%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.icon-one-container {
+	background-image: url('../assets/icon-fav.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+	margin-right: 7px;
+}
+.icon-one-container.purple-like {
+	background-image: url('../assets/icon-fav-active.svg');
+	background-position: center;
+	background-color: #ffffff;
+	background-size: 55%;
+	background-repeat: no-repeat;
+	border: 1px solid #572ee5;
+	border-radius: 25%;
+}
+.icon-two-container {
+	background-image: url('../assets/icon-download.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+	margin-right: 7px;
+}
+.icon-three-container {
+	background-image: url('../assets/icon-max-normal.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+	margin-right: 7px;
+}
+.icon-one-container:hover {
+	background-image: url('../assets/icon-fav-hover.svg');
+}
+.icon-two-container:hover {
+	background-image: url('../assets/icon-download-hover.svg');
+}
+.icon-three-container:hover {
+	background-image: url('../assets/icon-max-hover.svg');
+}
+
+.footer-container {
+	// position: absolute;
+	// bottom: 0;
+	// left: 0;
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	bottom: 0;
+}
+.user-p-container,
+.title-container {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #ffffff;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	text-align: justify;
+	max-width: 90%;
+}
+.title-container {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+// .hover-container:hover{
+//     opacity: 0.8;
+// }
+.icon-one-container:hover {
+	background-image: url('../assets/icon-fav-hover.svg');
+}
+.icon-two-container:hover {
+	background-image: url('../assets/icon-download-hover.svg');
+}
+.icon-three-container:hover {
+	background-image: url('../assets/icon-max-hover.svg');
+}
+
+.trending-scroll-image-container::-webkit-scrollbar {
+	width: 0;
+}

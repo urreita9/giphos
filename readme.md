@@ -3,7 +3,7 @@
 
 <h2> Search, store and create your own Giphos! </h2>
 
-Link:
+<b>Link:</b>
 <a href= "https://urreita9.github.io/giphos/">https://urreita9.github.io/giphos/</a>
 
 ## Project Objetives

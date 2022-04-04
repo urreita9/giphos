@@ -12,3 +12,7 @@ Tools and Techs:
   <li><b>Vanilla Javascript</b></li>
 </ul>  
 <h3> 📷 Use you <b>Camera</b> to create a Gipho </h3>
+
+<h4>Fetch data: Giphy api</h4>
+<h4>Responsive Design</h4>
+<h4>Light / Dark modes</h4>

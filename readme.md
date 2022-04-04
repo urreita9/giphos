@@ -1,7 +1,5 @@
-# Giphos App
+<h1> Giphos App </h1>
 
-Search, store and create your own GIFS!
+<h2> Search, store and create your own Giphos! </h2>
 
-First project ever done with HTML, Css/Sass and Vanilla Javascript.
-
-Allow access to your camera to make some GIFS.
+<h3> Use you <b>Camera</b> to create a Gipho </h3>

@@ -11,7 +11,7 @@
 ✅ Build an App using <b>html, css </b>and <b>javascript</b> from scratch  
 ✅ Afirm and conect all the learned concepts in the Course    
 ✅ Use Giphy <b>external api</b>  
-✅ <b>Access</b> and record a custom gif from the <b>📷 clients camera</b>.  
+✅ <b>Access</b> and <b>record</b> a custom gif from the <b>📷 clients camera</b>.  
 ✅ <b>Semantic html</b>  
 ✅ Search by query and trending    
 ✅ <b>Light / Dark modes</b>   

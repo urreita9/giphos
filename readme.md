@@ -1,3 +1,4 @@
+![Acamica Dev School](https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/Acamica/original.png?1590185035)
 <h1> 🎬 Giphos App </h1>
 
 <h2> Search, store and create your own Giphos! </h2>
@@ -13,6 +14,6 @@ Tools and Techs:
 </ul>  
 <h3> 📷 Use you <b>Camera</b> to create a Gipho </h3>
 
-<h4>Fetch data: Giphy api</h4>
-<h4>Responsive Design</h4>
-<h4>Light / Dark modes</h4>
+<h4>-Fetch data: Giphy api</h4>
+<h4>-Responsive Design</h4>
+<h4>-Light / Dark modes</h4>
